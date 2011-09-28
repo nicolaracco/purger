@@ -1,0 +1,10 @@
+----------
+  CODE: {{code}} ({{message}})
+  {{#failed_uri}}
+    FAILED_URI: {{.}}
+  {{/failed_uri}}
+  {{#success?}}
+    REQUESTED ID: {{request_id}}
+    ESTIMATED TIME: {{time}} min.
+  {{/success?}}
+----------
