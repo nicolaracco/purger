@@ -11,3 +11,9 @@ end
 
 #mustache config
 Mustache.template_path = File.join config_dir, '..', 'templates'
+
+#disable savon log
+Savon.configure do |config|
+  config.log = false            # disable logging
+  config.log_level = :error     # changing the log level
+end
